@@ -6,7 +6,8 @@
 
 var locals = {}
 
-locals.currentYear = (new Date()).getYear() + 1900
+// locals.currentYear = (new Date()).getYear() + 1900
+locals.currentYear = 2022
 
 locals.baseTitle = 'Sarah Meftah'
 locals.getTitle = function (subtitle) {
@@ -34,7 +35,9 @@ locals.projects = {
       { src: 'image9.jpg' },
       { src: 'image10.jpg' },
       { src: 'image11.jpg' },
-      { src: 'image12.jpg' }
+      { src: 'image12.jpg' },
+      { src: 'image13.jpg' },
+      { src: 'image14.jpg' }
     ]
   },
 
@@ -48,7 +51,7 @@ locals.projects = {
       { src: 'image3.jpg' },
       { src: 'image4.jpg' },
       { src: 'image5.jpg' },
-      // { src: 'image6.jpg' },
+      { src: 'image6.jpg' },
       { src: 'image7.jpg' },
       { src: 'image8.jpg' },
       { src: 'image9.jpg' },
@@ -64,11 +67,7 @@ locals.projects = {
       { src: 'image19.jpg' },
       { src: 'image20.jpg' },
       { src: 'image21.jpg' },
-      { src: 'image22.jpg' },
-      { src: 'image23.jpg' },
-      { src: 'image24.jpg' },
-      { src: 'image25.jpg' },
-      { src: 'image26.jpg' }
+      { src: 'image22.jpg' }
     ]
   },
 
