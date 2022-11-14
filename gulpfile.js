@@ -25,7 +25,7 @@ gulp.task('static', function copyStaticFilesToBuild () {
  * CSS
  */
 gulp.task('css', function compileSass () {
-  var sass = require('gulp-sass')
+  var sass = require('gulp-sass')(require('sass'))
   var autoprefixer = require('gulp-autoprefixer')
   var sourcemaps = require('gulp-sourcemaps')
 
@@ -36,7 +36,7 @@ gulp.task('css', function compileSass () {
   ])
   .pipe(sourcemaps.init())
   .pipe(sass.sync({
-    outputStyle: 'compact'
+    style: 'compressed'
   }).on('error', sass.logError))
   .pipe(autoprefixer({
     cascade: false
@@ -107,7 +107,10 @@ gulp.task('js', function minifyJs () {
 gulp.task('img:generate:projectThumbnails', function createImageThumbnails () {
   var rename = require('gulp-rename')
   var imageResize = require('gulp-image-resize')
-  return gulp.src(dirs.cloud + '/img/originals/projects/**/*.jpg')
+  return gulp.src([
+    dirs.cloud + '/img/originals/projects/**/*.jpg',
+    dirs.cloud + '/img/originals/projects/**/*.png'
+  ])
   .pipe(rename(function (path) {
     path.basename = path.basename.replace(/\s/g, '_').toLowerCase()
   }))
@@ -149,7 +152,8 @@ gulp.task('img:generate:cover', function copyImageCoverToBuild () {
 gulp.task('img:copy:projectOriginals', function copyImageOriginalsToBuild () {
   var rename = require('gulp-rename')
   return gulp.src([
-    dirs.cloud + '/img/originals/projects/**/*.jpg'
+    dirs.cloud + '/img/originals/projects/**/*.jpg',
+    dirs.cloud + '/img/originals/projects/**/*.png'
   ])
   .pipe(rename(function (path) {
     path.basename = path.basename.replace(/\s/g, '_').toLowerCase()

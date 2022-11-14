@@ -37,7 +37,13 @@ locals.projects = {
       { src: 'image11.jpg' },
       { src: 'image12.jpg' },
       { src: 'image13.jpg' },
-      { src: 'image14.jpg' }
+      { src: 'image14.jpg' },
+      { src: 'image15.jpg' },
+      { src: 'image16.jpg' },
+      { src: 'image17.jpg' },
+      { src: 'image18.jpg' },
+      { src: 'image19.jpg' },
+      { src: 'image20.jpg' }
     ]
   },
 
@@ -55,8 +61,8 @@ locals.projects = {
       { src: 'image7.jpg' },
       { src: 'image8.jpg' },
       { src: 'image9.jpg' },
-      { src: 'image10.jpg' },
-      { src: 'image11.jpg' },
+      { src: 'image10.png' },
+      { src: 'image11.png' },
       { src: 'image12.jpg' },
       { src: 'image13.jpg' },
       { src: 'image14.jpg' },
@@ -67,7 +73,13 @@ locals.projects = {
       { src: 'image19.jpg' },
       { src: 'image20.jpg' },
       { src: 'image21.jpg' },
-      { src: 'image22.jpg' }
+      { src: 'image22.jpg' },
+      { src: 'image23.jpg' },
+      { src: 'image24.jpg' },
+      { src: 'image25.jpg' },
+      { src: 'image26.jpg' },
+      { src: 'image27.png' },
+      { src: 'image28.jpg' }
     ]
   },
 
