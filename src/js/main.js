@@ -10,7 +10,7 @@
   var sideBar = $('#wrapper')
   var win = $(window)
 
-    // Nav
+  // Nav
   $('#topbar-wrapper button').click(function (ev) {
     ev.preventDefault()
     sideBar.toggleClass('toggled')
@@ -23,4 +23,7 @@
       sideBar.removeClass('toggled')
     }
   })
+
+  // Update copyright to current year.
+  $('#copyrightYear').text((new Date()).getFullYear())
 })(jQuery)
