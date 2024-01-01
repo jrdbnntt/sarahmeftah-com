@@ -230,7 +230,8 @@ gulp.task('demo', gulp.series('resolveIp', function runLocalDemo (done) {
   server.on('listening', function () {
     console.log('Express app hosting static directory ', dirs.build)
     console.log('Listening on localhost ' + port)
-    console.log('Externally Accessable @ http://' + externalIp + ':' + port)
+    console.log('Externally Accessible @ http://' + externalIp + ':' + port)
+    console.log('Locally Accessible @ http://localhost:' + port)
     done()
   })
   server.listen(port)
