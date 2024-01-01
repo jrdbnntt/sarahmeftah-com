@@ -20,18 +20,15 @@ Then install local packages
 npm install
 ```
 
-## Building project
-Normal static files
+Add google cloud folder with static files to project root
 ```
-npm run gulp
+ln -s  /mnt/hgfs/google_drive/Development/sarahmeftah-com cloud
 ```
 
-Images
+## Building project
+Build static files and images
 ```
-npm run gulp:img
-```
-```
-npm run gulp:img:generate:cover
+npm run gulp
 ```
 
 Run locally

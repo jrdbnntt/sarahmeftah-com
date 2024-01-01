@@ -6,13 +6,11 @@ block content
             .art-vertical
                 for img in project.images
                     .art-thumb
-                        a(href=`/img/originals/projects/${project.imageRootSrc}/${img.src}`)
-                            img(src=`/img/thumbs/projects/${project.imageRootSrc}/${img.src}` style="max-width: 100%" height="auto" width="550px")
+                        img(src=`/img/thumbs/projects/${project.imageRootSrc}/${img.src}` style="max-width: 100%" height="auto" width="550px")
         else
             .art-horizontal
                 for img in project.images
                     .art-thumb
-                        a(href=`/img/originals/projects/${project.imageRootSrc}/${img.src}`)
-                            img(src=`/img/thumbs/projects/${project.imageRootSrc}/${img.src}` height="1000px" width="auto")
+                        img(src=`/img/thumbs/projects/${project.imageRootSrc}/${img.src}` height="1000px" width="auto")
     else
         h1 Error! Missing project data object

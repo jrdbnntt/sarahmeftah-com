@@ -18,10 +18,32 @@ locals.getTitle = function (subtitle) {
 
 // Order defined is the same as nav order
 locals.projects = {
-  'grim': {
-    title: 'Grim',
-    imageRootSrc: 'grim',
-    href: '/projects/grim.html',
+  'untitled': {
+    title: 'Untitled',
+    imageRootSrc: 'Untitled',
+    href: '/projects/untitled.html',
+    images: [
+      { src: 'image1.jpg' },
+      { src: 'image2.jpg' },
+      { src: 'image3.jpg' },
+      { src: 'image4.jpg' },
+      { src: 'image5.jpg' },
+      { src: 'image6.jpg' },
+      { src: 'image7.jpg' },
+      { src: 'image8.jpg' },
+      { src: 'image9.jpg' },
+      { src: 'image10.jpg' },
+      { src: 'image11.jpg' },
+      { src: 'image12.jpg' },
+      { src: 'image13.jpg' },
+      { src: 'image14.jpg' },
+    ]
+  },
+
+  'cul_de_sac': {
+    title: 'cul de sac',
+    imageRootSrc: 'cul_de_sac',
+    href: '/projects/cul_de_sac.html',
     images: [
       { src: 'image1.jpg' },
       { src: 'image2.jpg' },
@@ -40,28 +62,22 @@ locals.projects = {
       { src: 'image15.jpg' },
       { src: 'image16.jpg' },
       { src: 'image17.jpg' },
-      { src: 'image18.jpg' },
-      { src: 'image19.jpg' },
-      { src: 'image20.jpg' }
     ]
   },
 
-  'the_sunset': {
-    title: 'The Sunset',
-    imageRootSrc: 'the_sunset',
-    href: '/projects/the_sunset.html',
+  'staring_at_the_sunset': {
+    title: 'Staring at the Sunset',
+    imageRootSrc: 'staring_at_the_sunset',
+    href: '/projects/staring_at_the_sunset.html',
     images: [
       { src: 'image1.jpg' },
       { src: 'image2.jpg' },
       { src: 'image3.jpg' },
-      { src: 'image4.jpg' },
       { src: 'image5.jpg' },
       { src: 'image6.jpg' },
       { src: 'image7.jpg' },
       { src: 'image8.jpg' },
       { src: 'image9.jpg' },
-      { src: 'image10.png' },
-      { src: 'image11.png' },
       { src: 'image12.jpg' },
       { src: 'image13.jpg' },
       { src: 'image14.jpg' },
@@ -77,15 +93,14 @@ locals.projects = {
       { src: 'image24.jpg' },
       { src: 'image25.jpg' },
       { src: 'image26.jpg' },
-      { src: 'image27.png' },
       { src: 'image28.jpg' }
     ]
   },
 
-  'basketball_courts': {
-    title: 'Basketball Courts',
-    imageRootSrc: 'basketball_courts',
-    href: '/projects/basketball_courts.html',
+  'air': {
+    title: 'Air',
+    imageRootSrc: 'air',
+    href: '/projects/air.html',
     images: [
       { src: 'image1.jpg' },
       { src: 'image2.jpg' },

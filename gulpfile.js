@@ -167,7 +167,7 @@ gulp.task('img:copy:linkPreview', function copyImageOriginalsToBuild () {
   .pipe(gulp.dest(dirs.build + '/img/'))
 })
 gulp.task('img', gulp.parallel(
-  'img:copy:projectOriginals',
+  // 'img:copy:projectOriginals',
   'img:generate:cover',
   'img:generate:projectThumbnails',
   'img:generate:bio',
@@ -237,4 +237,4 @@ gulp.task('demo', gulp.series('resolveIp', function runLocalDemo (done) {
   server.listen(port)
 }))
 
-gulp.task('default', gulp.series('build'))
+gulp.task('default', gulp.series('build', 'img'))
