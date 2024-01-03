@@ -46,7 +46,6 @@ locals.projects = {
     href: '/projects/cul_de_sac.html',
     images: [
       { src: 'image1.jpg' },
-      { src: 'image2.jpg' },
       { src: 'image3.jpg' },
       { src: 'image4.jpg' },
       { src: 'image5.jpg' },
@@ -73,7 +72,6 @@ locals.projects = {
       { src: 'image1.jpg' },
       { src: 'image2.jpg' },
       { src: 'image3.jpg' },
-      { src: 'image5.jpg' },
       { src: 'image6.jpg' },
       { src: 'image7.jpg' },
       { src: 'image8.jpg' },
@@ -83,7 +81,6 @@ locals.projects = {
       { src: 'image14.jpg' },
       { src: 'image15.jpg' },
       { src: 'image16.jpg' },
-      { src: 'image17.jpg' },
       { src: 'image18.jpg' },
       { src: 'image19.jpg' },
       { src: 'image20.jpg' },
