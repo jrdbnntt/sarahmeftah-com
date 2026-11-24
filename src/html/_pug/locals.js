@@ -115,12 +115,6 @@ locals.projects = {
   }
 }
 
-locals.infos = [
-  { title: 'Bio', href: '/info/bio.html' },
-  { title: 'CV', href: '/info/cv.html' },
-  { title: 'Contact', href: '/info/contact.html' }
-]
-
 locals.og = {
   image: 'http://sarahmeftah.com/img/link_preview.jpg',
   url: 'http://sarahmeftah.com'

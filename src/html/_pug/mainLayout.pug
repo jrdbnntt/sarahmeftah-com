@@ -61,9 +61,6 @@ html
                     each item in projects
                         li(class=(title===item.title? "active" : "")): a(href=item.href) #{item.title}
 
-                    li.divider: span Info
-                    each item in infos
-                        li(class=(title===item.title? "active" : "")): a(href=item.href) #{item.title}
 
             #page-content-wrapper.container-fluid
                 .content
