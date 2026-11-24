@@ -26,7 +26,8 @@ gulp.task('static', function copyStaticFilesToBuild () {
  */
 gulp.task('css', function compileSass () {
   var sass = require('gulp-sass')(require('sass'))
-  var autoprefixer = require('gulp-autoprefixer')
+  var autoprefixerModule = require('gulp-autoprefixer')
+  var autoprefixer = autoprefixerModule.default || autoprefixerModule
   var sourcemaps = require('gulp-sourcemaps')
 
   return gulp.src([
@@ -36,7 +37,8 @@ gulp.task('css', function compileSass () {
   ])
   .pipe(sourcemaps.init())
   .pipe(sass.sync({
-    style: 'compressed'
+    style: 'compressed',
+    silenceDeprecations: ['import', 'global-builtin', 'color-functions']
   }).on('error', sass.logError))
   .pipe(autoprefixer({
     cascade: false
