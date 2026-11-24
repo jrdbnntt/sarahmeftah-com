@@ -18,7 +18,7 @@ var dirs = {
  * Static files
  */
 gulp.task('static', function copyStaticFilesToBuild() {
-  return gulp.src(dirs.src + '/static/**/*').pipe(gulp.dest(dirs.build))
+  return gulp.src(dirs.src + '/static/**/*', { encoding: false }).pipe(gulp.dest(dirs.build))
 })
 
 /**
@@ -112,7 +112,7 @@ gulp.task('img:generate:projectThumbnails', function createImageThumbnails() {
   return gulp.src([
     dirs.cloud + '/img/originals/projects/**/*.jpg',
     dirs.cloud + '/img/originals/projects/**/*.png'
-  ])
+  ], { encoding: false })
     .pipe(rename(function (path) {
       path.basename = path.basename.replace(/\s/g, '_').toLowerCase()
     }))
@@ -128,7 +128,7 @@ gulp.task('img:generate:projectThumbnails', function createImageThumbnails() {
 })
 gulp.task('img:generate:cover', function copyImageCoverToBuild() {
   var imageResize = require('gulp-image-resize')
-  return gulp.src(dirs.cloud + '/img/front_page.jpg')
+  return gulp.src(dirs.cloud + '/img/front_page.jpg', { encoding: false })
     .pipe(imageResize({
       // width: 3500,
       height: 1100,
@@ -144,7 +144,7 @@ gulp.task('img:copy:projectOriginals', function copyImageOriginalsToBuild() {
   return gulp.src([
     dirs.cloud + '/img/originals/projects/**/*.jpg',
     dirs.cloud + '/img/originals/projects/**/*.png'
-  ])
+  ], { encoding: false })
     .pipe(rename(function (path) {
       path.basename = path.basename.replace(/\s/g, '_').toLowerCase()
     }))
@@ -153,7 +153,7 @@ gulp.task('img:copy:projectOriginals', function copyImageOriginalsToBuild() {
 gulp.task('img:copy:linkPreview', function copyImageOriginalsToBuild() {
   return gulp.src([
     dirs.cloud + '/img/link_preview.jpg'
-  ])
+  ], { encoding: false })
     .pipe(gulp.dest(dirs.build + '/img/'))
 })
 gulp.task('img', gulp.parallel(
